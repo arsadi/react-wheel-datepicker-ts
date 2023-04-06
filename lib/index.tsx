@@ -13,7 +13,6 @@ const EnhanceDatePicker: React.FC<EnhanceDatePickerProps> = ({ isOpen = false, o
   const onModalClose: React.MouseEventHandler<HTMLDivElement> = (event) => {
     if (isModal && event.target === event.currentTarget && onCancel) {
       setIsModal(false);
-      onCancel(event);
     }
   };
   const handleStart: React.MouseEventHandler<HTMLDivElement> & React.TouchEventHandler<HTMLDivElement> = (e) => {
