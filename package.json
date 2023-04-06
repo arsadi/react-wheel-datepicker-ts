@@ -1,5 +1,5 @@
 {
-  "name": "react-mobile-datepicker-ts",
+  "name": "react-wheel-datepicker-ts",
   "version": "1.0.0",
   "types": "dist",
   "description": "react based date picker like native",
@@ -9,12 +9,13 @@
     "dist/*",
     "dist/**/*"
   ],
-  "amdName": "reactMobileDatePickerTs",
-  "repository": "jin60641/react-mobile-datepicker",
-  "homepage": "https://github.com/jin60641/react-mobile-datepicker#readme",
+  "amdName": "reactWheelDatePickerTs",
+  "repository": "arsadi/react-wheel-datepicker-ts",
+  "homepage": "https://github.com/arsadi/react-wheel-datepicker-ts#readme",
   "keywords": [
     "react-component",
     "react-datepicker",
+    "wheel-datepicker",
     "date",
     "datepicker",
     "react",
