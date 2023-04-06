@@ -1,4 +1,4 @@
-# react-mobile-datepicker-ts
+# react-wheel-datepicker-ts
 [![npm package][npm-badge]][npm]
 
 **a lightweight react date picker for mobile, Not more than 4k**
