@@ -26,7 +26,7 @@ export interface DatePickerProps {
   cancelText?: string,
   onChange?: Function,
   onSelect?: Function,
-  onCancel?: Function,
+  onCancel?: () => void,
 }
 
 const normalizeDateConfig = (dateConfig: Required<DatePickerProps>['dateConfig']) => {
