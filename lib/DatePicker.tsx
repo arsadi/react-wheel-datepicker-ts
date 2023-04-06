@@ -26,7 +26,7 @@ export interface DatePickerProps {
   cancelText?: string,
   onChange?: Function,
   onSelect?: Function,
-  onCancel?: React.MouseEventHandler<HTMLButtonElement | HTMLDivElement>,
+  onCancel?: Function,
 }
 
 const normalizeDateConfig = (dateConfig: Required<DatePickerProps>['dateConfig']) => {
