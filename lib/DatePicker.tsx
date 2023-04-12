@@ -26,7 +26,7 @@ export interface DatePickerProps {
   cancelText?: string,
   onChange?: Function,
   onSelect?: Function,
-  onCancel?: () => void,
+  onCancel?: React.MouseEventHandler<HTMLButtonElement | HTMLDivElement>,
 }
 
 const normalizeDateConfig = (dateConfig: Required<DatePickerProps>['dateConfig']) => {
@@ -88,7 +88,6 @@ const DatePicker: React.FC<DatePickerProps> = ({
   customHeader,
   onSelect,
   onChange,
-  onCancel,
 }) => {
   const [value, setValue] = useState(nextDate(propsValue));
   useEffect(() => {
@@ -161,7 +160,8 @@ const DatePicker: React.FC<DatePickerProps> = ({
           </button>
           <button
             className='datepicker-navbar-btn'
-            onClick={onCancel}
+            onTouchStart={handleFinishBtnClick}
+            onMouseUp={handleFinishBtnClick}
           >
             {cancelText}
           </button>
